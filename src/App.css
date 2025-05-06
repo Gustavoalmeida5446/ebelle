@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --primary-color: #AD0B7D; 
+  --white: #F6E4F1; 
+  --text-color: #020002;
+  --black-80: rgba(2, 0, 2, 0.8);
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-container {
+  background-image: url('../src/assets/adam-winger--THiqda3iGM-unsplash.jpg'); 
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: 0;
+}
+
+.hero-content {
+  padding: 40px;
+  max-width: 500px;
+}
+
+.hero-box {
+  text-align: left;
+  color: var(--white);
+  padding: 20px;
+  background: var(--black-80);
+  border-radius: 8px;
+}
+
+.hero-headline {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.hero-paragraph {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--white); 
+}
+
+@media screen and (min-width: 768px) {
+
+  .hero-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+}
+
+.hero-buttons .button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.hero-buttons .button-primary {
+  background-color: var(--primary-color); 
+  color: var(--white);
+}
+
+.hero-buttons .button-primary:hover {
+  background-color: var(--white); 
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.hero-buttons .button-secondary {
+  background-color: rgba(246, 228, 241, 0.5); 
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.hero-buttons .button-secondary:hover {
+  background-color: rgba(173, 11, 125, 0.2); 
+  color: var(--primary-color);
+}
