@@ -1,4 +1,5 @@
 import "./App.css";
+import { FaCalendar } from "react-icons/fa";
 
 function App() {
   return (
@@ -24,6 +25,25 @@ function App() {
             <button className="button button-secondary">Entrar</button>
           </div>
         </div>
+      </div>
+      <div>
+        <section className="info-section">
+          <div className="info-grid">
+            <div className="info-box">
+              <FaCalendar />
+              <h2 className="info-title">Agenda</h2>
+              <p className="info-description">
+                Mantenha a agenda online, permita que seus clientes façam o
+                próprio agendamento, libere o acesso para seus profissionais
+                através de smartphones ou tablets, faça agendamentos periódicos,
+                controle bloqueios e liberações.
+              </p>
+            </div>
+            <div className="info-box">Box 2</div>
+            <div className="info-box">Box 3</div>
+            <div className="info-box">Box 4</div>
+          </div>
+        </section>
       </div>
     </>
   );

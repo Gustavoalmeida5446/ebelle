@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-  --primary-color: #AD0B7D; 
-  --white: #F6E4F1; 
+  --primary-color: #ad0b7d;
+  --white: #f6e4f1;
   --text-color: #020002;
   --black-80: rgba(2, 0, 2, 0.8);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -14,16 +14,21 @@ body {
 }
 
 .hero-container {
-  background-image: url('../src/assets/adam-winger--THiqda3iGM-unsplash.jpg'); 
+  background-image: url("../src/assets/adam-winger--THiqda3iGM-unsplash.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
-  margin: 0;
+  min-height: 90vh;
+  position: relative;
 }
 
 .hero-content {
   padding: 40px;
-  max-width: 500px;
+  max-width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero-box {
@@ -35,24 +40,27 @@ body {
 }
 
 .hero-headline {
-  font-size: 2.5rem;
+  font-size: 1.5em;
   font-weight: 900;
   margin-bottom: 20px;
 }
 
 .hero-paragraph {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 30px;
-  color: var(--white); 
+  color: var(--white);
 }
 
 @media screen and (min-width: 768px) {
+  .hero-content {
+    left: 15%;
+    transform: translateY(-50%);
+  }
 
   .hero-buttons {
     display: flex;
     gap: 20px;
   }
-  
 }
 
 .hero-buttons .button {
@@ -70,23 +78,38 @@ body {
 }
 
 .hero-buttons .button-primary {
-  background-color: var(--primary-color); 
+  background-color: var(--primary-color);
   color: var(--white);
 }
 
 .hero-buttons .button-primary:hover {
-  background-color: var(--white); 
+  background-color: var(--white);
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
 
 .hero-buttons .button-secondary {
-  background-color: rgba(246, 228, 241, 0.5); 
+  background-color: rgba(246, 228, 241, 0.5);
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
 
 .hero-buttons .button-secondary:hover {
-  background-color: rgba(173, 11, 125, 0.2); 
+  background-color: rgba(173, 11, 125, 0.2);
+  color: var(--primary-color);
+}
+
+.info-grid {
+  flex: auto;
+}
+.info-box {
+  border: var(--primary-color) 1px solid;
+  width: 400px;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  min-height: 300px;
+  justify-content: center;
+  justify-items: center;
   color: var(--primary-color);
 }
