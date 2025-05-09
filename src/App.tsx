@@ -2,12 +2,17 @@ import "./App.css";
 import { FaBoxOpen, FaCalendar, FaChartLine, FaUsers } from "react-icons/fa";
 import phone from "./assets/Free_Hand_Holding_iPhone_16_Pro_Mockup.png";
 import Footer from "./components/Footer";
+import logo from "./assets/logo-horizontal.svg";
+import { useNavigate } from "react-router";
 
 function App() {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="hero-section">
         <div className="hero-content">
+          <img className="logo" src={logo} alt="e-belle" />
           <div className="hero-box">
             <h1 className="hero-headline">
               Administre seu negócio de beleza com mais controle, agilidade e
@@ -24,7 +29,12 @@ function App() {
           </div>
           <div className="hero-buttons">
             <button className="button-primary">Cadastrar empresa</button>
-            <button className="button-secondary">Entrar</button>
+            <button
+              className="button-secondary"
+              onClick={() => navigate("./login")}
+            >
+              Entrar
+            </button>
           </div>
         </div>
       </div>

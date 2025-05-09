@@ -128,7 +128,7 @@ body {
   margin: 8px 0;
   border: none;
   font-size: 16px;
-  width: 100%;
+  width: fit-content;
 }
 
 .plans-section {
@@ -178,6 +178,8 @@ body {
 .access-paragraph {
   font-size: 1rem;
   margin-bottom: 30px;
+  margin-top: 50%;
+  margin: auto;
 }
 
 .footer {
