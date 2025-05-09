@@ -12,39 +12,33 @@ function Login() {
       <div className="login-box">
         <img className="logo-icon" src={logoIcon} alt="e-belle" />
         <h1>Entrar</h1>
-        <form>
-          <div className="input-wrapper">
-            <input
-              className="input"
-              placeholder="usuario@email.com"
-              type="text"
-              name="username"
-            />
-            <FaUser className="icon" />
+        <div className="input-wrapper">
+          <input
+            className="input"
+            placeholder="usuario@email.com"
+            type="text"
+            name="username"
+          />
+          <FaUser className="icon" />
+        </div>
+        <div className="input-wrapper">
+          <input
+            className="input"
+            placeholder="********"
+            type="password"
+            name="password"
+          />
+          <FaLock className="icon" /> <br />
+        </div>
+        <div className="login-wrapper">
+          <div>
+            <input type="checkbox" />
+            <label className="login-remember">Lembrar-me</label>
           </div>
-          <div className="input-wrapper">
-            <input
-              className="input"
-              placeholder="********"
-              type="password"
-              name="password"
-            />
-            <FaLock className="icon" /> <br />
-          </div>
-          <div className="login-wrapper">
-            <div>
-              <input type="checkbox" />
-              <label className="login-remember">Lembrar-me</label>
-            </div>
-            <button
-              className="button-login"
-              onClick={handleClick}
-              type="submit"
-            >
-              Entrar
-            </button>
-          </div>
-        </form>
+          <button className="button-login" onClick={handleClick} type="submit">
+            Entrar
+          </button>
+        </div>
         <div className="divider"></div>
         <img src={fb} onClick={handleClick} />
         <div className="login-wrapper">
