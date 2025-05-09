@@ -7,6 +7,9 @@ import { useNavigate } from "react-router";
 
 function App() {
   const navigate = useNavigate();
+  const handleClick = () => {
+    alert("Button clicked!");
+  };
 
   return (
     <>
@@ -28,7 +31,9 @@ function App() {
             </p>
           </div>
           <div className="hero-buttons">
-            <button className="button-primary">Cadastrar empresa</button>
+            <button className="button-primary" onClick={handleClick}>
+              Cadastrar empresa
+            </button>
             <button
               className="button-secondary"
               onClick={() => navigate("./login")}
@@ -93,7 +98,9 @@ function App() {
             estúdios. Gerencie agenda, equipe, produtos e finanças de forma
             online, em um só lugar.
           </p>
-          <button className="button-plans">Cadastrar empresa</button>
+          <button className="button-plans" onClick={handleClick}>
+            Cadastrar empresa
+          </button>
         </div>
       </div>
       <div className="access-section">
