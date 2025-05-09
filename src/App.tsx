@@ -99,7 +99,7 @@ function App() {
             online, em um só lugar.
           </p>
           <button className="button-plans" onClick={handleClick}>
-            Cadastrar empresa
+            Ver todos os Planos
           </button>
         </div>
       </div>
