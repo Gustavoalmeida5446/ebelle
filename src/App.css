@@ -187,4 +187,37 @@ body {
   z-index: 3;
   justify-items: center;
   padding: 36px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-content {
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .info-section {
+    width: 90%;
+  }
+  .info-box {
+    width: 100%;
+  }
+  .access-section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .access-box {
+    width: 100%;
+  }
+  .access-image {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 -100px 0;
+  }
 }
