@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router";
 import Login from "./Login.tsx";
+import ForgotPassword from "./Forgot-password.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,6 +15,7 @@ const router = createBrowserRouter(
       <Route>
         <Route path="/ebelle" element={<App />} />
         <Route path="ebelle/login" element={<Login />} />
+        <Route path="ebelle/forgot-password" element={<ForgotPassword />} />
       </Route>
     </>
   )

@@ -1,10 +1,9 @@
 import logoIcon from "./assets/logo-icon.svg";
-import fb from "./assets/fb.png";
-import { FaUser, FaLock } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import { useNavigate } from "react-router";
 import Footer from "./components/Footer";
 
-function Login() {
+function ForgotPassword() {
   const navigate = useNavigate();
   const handleClick = () => {
     alert("Button clicked!");
@@ -25,39 +24,19 @@ function Login() {
             />
             <FaUser className="icon" />
           </div>
-          <div className="input-wrapper">
-            <input
-              className="input"
-              placeholder="********"
-              type="password"
-              name="password"
-            />
-            <FaLock className="icon" /> <br />
-          </div>
-          <div className="login-wrapper">
-            <div>
-              <input type="checkbox" />
-              <label className="login-remember">Lembrar-me</label>
-            </div>
+          <div className="forgot-wrapper">
             <button
               className="button-login"
               onClick={handleClick}
               type="submit"
             >
-              Entrar
+              Enviar
             </button>
           </div>
           <div className="divider"></div>
-          <img src={fb} onClick={handleClick} />
-          <div className="login-wrapper">
-            <p
-              className="login-link"
-              onClick={() => navigate("/ebelle/forgot-password")}
-            >
-              Esqueci minha senha
-            </p>
-            <p className="login-link" onClick={handleClick}>
-              Quero me cadastrar
+          <div className="align-left">
+            <p className="login-link" onClick={() => navigate("/ebelle/login")}>
+              Voltar para login
             </p>
           </div>
         </div>
@@ -66,4 +45,4 @@ function Login() {
     </>
   );
 }
-export default Login;
+export default ForgotPassword;
