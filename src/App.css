@@ -43,6 +43,15 @@ h1 {
   transform: translate(-15%, -50%);
 }
 
+.logo {
+  text-align: center;
+  padding: 20px;
+  background: rgba(246, 228, 241, 0.288);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  backdrop-filter: blur(16px);
+}
+
 .hero-box {
   text-align: left;
   color: var(--white);

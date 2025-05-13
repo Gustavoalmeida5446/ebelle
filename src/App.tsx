@@ -15,7 +15,9 @@ function App() {
     <>
       <div className="hero-section">
         <div className="hero-content">
-          <img className="logo" src={logo} alt="e-belle" />
+          <div className="logo">
+            <img src={logo} alt="e-belle" />
+          </div>
           <div className="hero-box">
             <h1 className="hero-headline">
               Administre seu negócio de beleza com mais controle, agilidade e
