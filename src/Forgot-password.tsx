@@ -14,7 +14,10 @@ function ForgotPassword() {
       <div className="login-container">
         <div className="login-box">
           <img className="logo-icon" src={logoIcon} alt="e-belle" />
-          <h1 className="uppercase">Entrar</h1>
+          <h1 className="uppercase">Recuperar senha</h1>
+          <p className="forgot-password-paragraph">
+            Por favor entre com seu email para receber instruções.
+          </p>
           <div className="input-wrapper">
             <input
               className="input"

@@ -31,7 +31,10 @@ function App() {
             </p>
           </div>
           <div className="hero-buttons">
-            <button className="button-primary" onClick={handleClick}>
+            <button
+              className="button-primary"
+              onClick={() => navigate("./register")}
+            >
               Cadastrar empresa
             </button>
             <button

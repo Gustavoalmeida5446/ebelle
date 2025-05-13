@@ -56,7 +56,10 @@ function Login() {
             >
               Esqueci minha senha
             </p>
-            <p className="login-link" onClick={handleClick}>
+            <p
+              className="login-link"
+              onClick={() => navigate("/ebelle/register")}
+            >
               Quero me cadastrar
             </p>
           </div>

@@ -8,6 +8,7 @@ import {
 } from "react-router";
 import Login from "./Login.tsx";
 import ForgotPassword from "./Forgot-password.tsx";
+import Register from "./Register.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
         <Route path="/ebelle" element={<App />} />
         <Route path="ebelle/login" element={<Login />} />
         <Route path="ebelle/forgot-password" element={<ForgotPassword />} />
+        <Route path="ebelle/register" element={<Register />} />
       </Route>
     </>
   )
